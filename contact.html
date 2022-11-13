@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="./testarea/img/favicon.ico">
+        <title>contact</title>
+        <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section id="menu" class="menu" >
+            <div id="navtitle"><h3>NewsPaper</h3></div>
+            <div class="nav"><a href="home.html" class="active">Home</a></div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">News</span>
+                  <i class="fa fa-caret-down"></i>
+                </button> 
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="project.html" >Sport</a>
+                  <a href="movies.html">movies</a>
+                  <a href="War.html">War</a>
+                </div>
+              </div> 
+            <div class="nav"><a id="navactive" href="contact.html">Contact us</a></div>
+            
+            <div class="nav"><a href="#about">About</a></div>
+            <div class="nav" id="Anav"><a href="login.html">  Login</a></div>
+            <form id="con" action="" method="">
+              <p><span><input type="search" id="Anav" name="search" placeholder="search.."></span></p>
+            </form>
+          </section>
+        <br><br>
+        <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+          </script>
+        <br><br>
+    <div class="container">
+        <form action="">
+            <label for="name"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="name" placeholder="name..">
+
+            <label for="email"><i class="fa fa-envelope"></i>  Email</label>
+            <input type="email" id="email" placeholder="*****@gmail.com">
+            
+            <label for="country"><i class="fa fa-institution"></i>  Country</label>
+            <select name="country" id="country">
+                <option value="marocco">Morocco</option>
+                <option value="usa">USA</option>
+                <option value="algeria">Algerie</option>
+                <option value="egypt">Egypt</option>
+            </select>
+
+            <label for="subject">subject</label>
+            <textarea name="sub" id="sub" placeholder="write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    </body>
+</html> 
+        

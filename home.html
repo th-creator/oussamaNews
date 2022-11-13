@@ -1,0 +1,177 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Newspaper</title>
+        <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
+        <link rel="stylesheet" href="home.css" >
+    </head>
+    <body>
+        <section id="menu" class="menu" >
+            <div id="navtitle"><h3>NewsPaper</h3></div>
+            <div class="nav"><a id="navactive" href="home.html" >Home</a></div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">News</span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="project.html" >Sport</a>
+                <a href="movies.html">movies</a>
+                <a href="War.html">War</a>
+              </div>
+            </div> 
+            <div class="nav"><a href="contact.html">Contact us</a></div>
+            
+            <div class="nav"><a href="#about">About</a></div>
+            <div class="nav" id="Anav"><a href="login.html">Login</a></div>
+            <form id="con" action="" method="">
+              <p><span><input type="search" id="Anav" name="search" placeholder="search.."></span></p>
+            </form>
+          </section>
+        <br><br>
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+        </script>
+        <br><br>
+        <div class="welcome">
+          <h1 class="frst-p"> Welcome to our</h1>
+          <h1 class="scnd-p">NewsPaper</h1>
+          <div class="p">
+              our website is a global newspaper that provides the latest news around <br>
+              the world 
+              with different topics and languages<br>
+              <h3>join us to receive news regularly just with a click </h3>
+          </div>
+          <a href="#"><button class="join">Join Us</button></a>
+      </div>
+      
+      <div class="Location">
+        <h2 >Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2176.3346403340133!2d-7.963091841841023!3d31.59878910318431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee2c07b81dc1%3A0xb5cf33275107a7b3!2sSidi%20Youssef%20Ben%20Ali%2C%20Marrakesh!5e0!3m2!1sen!2sma!4v1643387862783!5m2!1sen!2sma" width="591" height="350"></iframe>
+      </div>
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+        </script>
+        <br><br>
+        <section id="cards"><div class="row">
+          <div class="column">
+            <div class="content">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="photos/paris.jpg" alt="Paris" width="100%" height="250px">
+                </div>
+                <div class="flip-box-back">
+                  <img src="photos/paris1.jpg" alt="Paris" width="100%" height="250px">
+                </div>
+                </div>
+            </div>
+              <h3>Paris</h3>
+              <ul class="discard">
+                <li>Country: France</li><br>
+                <li>Population: 2.165 million</li><br>
+                <li>Area: 105.4 km² </li>
+            </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="photos/new york.jpg" alt="newyork" width="100%" height="250px">
+                </div>
+                <div class="flip-box-back">
+                  <img src="photos/new_york1.jpg" alt="newyork" width="100%" height="250px">
+                </div>
+                </div>
+            </div>
+              <h3>New York</h3>
+              <ul class="discard">
+                <li>Country: America</li><br>
+                <li>Population: 8.419 million</li><br>
+                <li>Area: 783.8 km²</li>
+            </ul>
+          </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="photos/marrakesh.jpg" alt="marrakesh" width="100%" height="250px">
+                </div>
+                <div class="flip-box-back">
+                  <img src="photos/marrakesh1.jpg" alt="marrakesh" width="100%" height="250px">
+                </div>
+                </div>
+            </div>
+              <h3>Marrakesh</h3>
+              <ul class="discard">
+                <li>Country: Morocco</li><br>
+                <li>Population: 1.26 million</li><br>
+                <li>Area: 723 km²</li>
+            </ul>
+          </div>
+          </div>
+      </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <section id="footer">
+        <footer>
+          <div class="footer-content">
+            <h3>News-Paper</h3>
+            <p>we thank you for visiting our website annd we hope you enjoy it plus it's been a pleasure working with you guys you and always keep it in yourmind thatyou can make the deference</p>
+            <ul class="socials">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+           </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="project.html">News-Paper</a>  </p>
+          </div>
+        </footer>
+      </section>
+      <script>
+        var navbar = document.getElementById("menu");
+        var newsbtn = document.getElementById("dropdown")
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            navbar.style.position = "relative";
+            newsbtn.style.opacity = 0;
+          } else {
+            navbar.style.position = "fixed";
+            newsbtn.style.opacity = 1 ;
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>

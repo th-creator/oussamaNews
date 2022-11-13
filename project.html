@@ -1,0 +1,245 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Newspaper</title>
+        <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
+        <link rel="stylesheet" href="project.css" >
+        <script type="text/javascript" src="project.js"></script>
+    </head>
+    <body>
+        <section id="menu" class="menu" >
+            <div id="navtitle"><h3>NewsPaper</h3></div>
+            <div class="nav"><a href="home.html" >Home</a></div>
+            <div id="dropdown" class="dropdown" >
+              <button class="dropbtn" onclick="myFunction()">News</span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="project.html" >Sport</a>
+                <a href="movies.html">movies</a>
+                <a href="War.html">War</a>
+              </div>
+            </div> 
+            <div class="nav"><a href="contact.html">Contact us</a></div>
+            
+            <div class="nav"><a href="#about">About</a></div>
+            <div class="nav" id="Anav"><a href="login.html">Login</a></div>
+            <form id="con" action="" method="">
+              <p><span><input type="search" id="Anav" name="search" placeholder="search.."></span></p>
+            </form>
+          </section>
+        <br><br><br>
+        <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+          <a href="#" class="google"><i class="fa fa-google"></i></a> 
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>
+        <br><br><br><br>
+        <script>
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+        </script>
+        
+        <div id="mainContainer">
+          <div class="contain1">
+            <h2  style="color: white; padding-left: 50px; padding-top: 20px;">2022 Beijing Winter Olympics</h3> 
+            <video width="520px" height="380px" controls>
+                <source src="./video/olympics.mp4">
+            </video>
+            <p id="prgh">The Winter Olympics are underway in Beijing, but China's human rights abuses and the pandemic 
+              have cast a shadow over the Games. Jamie Yuccas takes a look. </p>
+          </div>
+          <div class="vl" style="width: 7%;">
+
+          </div>
+          <div claas="contain2">
+            <br><br>
+            <h2 id="showtitle" style="margin-top: 10px;" >some of the brightest photos</h2>
+            <br><br>
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="photos/sport1.jpg" style="width:100%" height="350px">
+                <div class="text">Olympics</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="photos/staduim.jpg" style="width:100%" height="350px">
+                <div class="text">Staduim</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="photos/sport.jpg" style="width: 600px" height="350px">
+                <div class="text">type of sports</div>
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+            </div>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+          </script>
+          <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000);
+            }
+            </script>
+        
+        
+        <br> 
+        <br>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">UP</button>
+        <br>
+        <div class="container">
+          <div class="backg">
+            <div class="card">
+              <img  src="photos/messi.jpg" alt="John" height="270px" style="width:100%">
+              <h1>Lionel</h1><h1 style="margin-top: -15px ;"> Messi</h1>
+              <p class="title">Argentine footballer</p>
+              <p>34 years old</p>
+              <div id="icons1" style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+                <a href="#"><i class="fa fa-facebook"></i></a> 
+              </div>
+              <p><button class="button">More Info</button></p>
+            </div>
+          </div>
+          <div class="backg">
+            <div class="card">
+              <img src="photos/kope_Brayant.jpg" alt="John" height="270px" style="width:100%">
+              <h1>Kobe</h1><h1 style="margin-top: -15px ;"> Bryant</h1>
+              <p class="title">American basketball player</p>
+              <p>42 years old</p>
+              <div id="icons1" style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+                <a href="#"><i class="fa fa-facebook"></i></a> 
+              </div>
+              <p><button class="button">More Info</button></p>
+            </div>
+          </div>
+          <div class="backg">
+            <div class="card">
+              <img src="photos/swimmer.jpg" alt="John" height="270px" style="width:100%">
+              <h1>Krisztina Egerszegi</h1>
+              <p class="title">Hungarian swimmer</p>
+              <p>47 years old</p>
+              <div id="icons1" style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+                <a href="#"><i class="fa fa-facebook"></i></a> 
+              </div>
+              <p><button class="button">More Info</button></p>
+            </div>
+          </div>
+          <div class="backg">
+            <div class="card">
+              <img src="photos/cristian.jpg" alt="John" height="270px" style="width:100%">
+              <h1>cristiano ronaldo</h1>
+              <p class="title">Portuguese footballer</p>
+              <p>37 years old</p>
+              <div id="icons1" style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>  
+                <a href="#"><i class="fa fa-linkedin"></i></a>  
+                <a href="#"><i class="fa fa-facebook"></i></a> 
+              </div>
+              <p><button class="button">More Info</button></p>
+            </div>
+          </div>
+          
+        </div>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            var navbar = document.getElementById("menu");
+            var newsbtn = document.getElementById("dropdown")
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 85 || document.documentElement.scrollTop > 85) {
+                mybutton.style.display = "block";
+                navbar.style.position = "relative";
+                newsbtn.style.opacity = 0;
+              } else {
+                mybutton.style.display = "none";
+                navbar.style.position = "fixed";
+                newsbtn.style.opacity = 1 ;
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+        

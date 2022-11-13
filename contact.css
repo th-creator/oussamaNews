@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(192, 189, 189);
+}
+.menu {
+    width: 100%;
+    font-size: 22px;
+    position: fixed;
+    background-color: #0B172A;
+}
+#navtitle {
+    float: left;
+    padding: 0px 8px 0px 10px;
+    margin: -10px 0px -15px 0px ;
+    color: #BC4123;
+    font-size: 27.5px;
+}
+.nav a {
+    color: white;
+    text-align: center;
+    margin: 15px 5px auto auto;
+    padding: 16px 12px;
+    text-decoration: none;
+    float: left;
+    padding: 18px;
+  }
+
+.nav a:hover {
+    background-color: #0f1c30;
+  } 
+.menu a:hover{
+    color: #BC4123;
+}
+#Anav {
+    float: right;
+    display: inline;
+}
+input[type=search] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('./photos/searching\ icon.jpg');
+    background-position: 10px 10px; 
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin:-3px 0 0 10px ;
+  }
+  input[type=search]:focus {
+    width: 37.5%;
+  }
+#navactive {
+    background-color: #0f1c30;
+    color: #a7a3a2;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+  }
+  .dropbtn {
+    text-align: center; 
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 15px 5px auto auto;
+    padding: 16px 12px;
+  }  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #0f1c30;
+    color: #BC4123;
+  }  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .show {
+    display: block;
+  }
+  
+input[type=text], input[type=email] , select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:vertical;
+}
+input[type=submit]{
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 15px 100px;
+}
